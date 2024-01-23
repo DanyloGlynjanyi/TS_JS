@@ -168,28 +168,28 @@ if (day > 0 && day <= 10) {
 console.log(day)
 //
 // - Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня і на екрані відображається інфа що заплановано на цей день (можна замість плану на день, назву дня англійською).
-let aDay: string = prompt('Enter day ?')
+let aDay: number = +prompt('Enter day ?')
 switch (aDay) {
-    case '1' :
+    case 1 :
         console.log('Monday');
         break;
-    case '2':
+    case 2:
         console.log('Tuesday');
         break;
 
-    case '3':
+    case 3:
         console.log('Wednesday');
         break;
-    case'4':
+    case 4:
         console.log('Thursday');
         break;
-    case'5':
+    case 5:
         console.log('Friday');
         break;
-    case'6':
+    case 6:
         console.log('Saturday');
         break;
-    case '7':
+    case 7:
         console.log('Sunday');
         break;
     default:
@@ -205,7 +205,7 @@ if (y > z) {
     console.log('y: ', y);
 } else if (z > y) {
     console.log('z: ', z);
-} else if (z === y) {
+} else{
     console.log('Рівні');
 }
 //     - є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно). Напишіть код який,
